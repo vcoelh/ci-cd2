@@ -10,7 +10,7 @@ if 'POSTGRES_PASSWORD_FILE' in os.environ:
        password = f.read().strip()
 else:
    password = os.environ['POSTGRES_PASSWORD']
-
+#    password = 'victor'
 @app.route('/')
 def hello_world():
     return 'Hello, Docker!'
